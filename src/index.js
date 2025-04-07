@@ -1,8 +1,11 @@
 
 require("./global.css");
 require('../src/login/script.js');
+require('../src/register/script.js');
+require('../src/admin/script.js');
 const {animate} = require("motion");
-function init(){
+const Account = require("../utilities/Account.js");
+async function init(){
     if(location.pathname.includes("admin")){
         // blok kode untuk admin
     }else{
@@ -17,4 +20,4 @@ function init(){
     ) 
 }
 
-init();
+document.addEventListener('DOMContentLoaded',(e) => init());
