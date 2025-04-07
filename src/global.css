@@ -1,5 +1,49 @@
 @import "tailwindcss";
 
+@layer utilities{
+
+  .clip-triangle{
+    clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%, 0% 38%);
+  }
+
+  .clip-inset-setengah{
+    clip-path: inset(0 0 50% 0);
+  }
+
+  .inter-lighter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+  }
+
+  .inter-normal{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .inter-medium{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .inter-bold{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .bg-auth{
+    background: (100,117,222);
+    background-image: linear-gradient(360deg, rgba(100,117,222,1) 100%, rgba(61,119,207,1) 100%, rgba(100,117,222,1) 100%);
+  }
+
+}
 
 html,
 body {

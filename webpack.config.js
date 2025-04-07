@@ -37,6 +37,18 @@ module.exports = (env) => {
             ]
         },
         plugins : [
+            new HtmlWebpackPlugin(
+                {
+                    template : "./src/register/index.html",
+                    filename : "register/index.html"
+                }
+            ),
+            new HtmlWebpackPlugin(
+                {
+                    template : "./src/login/index.html",
+                    filename : "login/index.html"
+                }
+            ),
             // dashboard user
             new HtmlWebpackPlugin(
                 {

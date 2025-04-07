@@ -1,5 +1,6 @@
 
 require("./global.css");
+require('../src/login/script.js');
 const {animate} = require("motion");
 function init(){
     if(location.pathname.includes("admin")){
