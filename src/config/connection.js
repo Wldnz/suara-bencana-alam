@@ -5,7 +5,7 @@ require("../schema/Request").configCloudinary();
 const cloudinary = require('cloudinary').v2;
 
 const connection = mysql.createConnection({
-    host : process.env.ENVIROMENT_MODE === "production" ? process.env.MYSQL_HOST : process.env.MYSQL_DEV_HOST,
+    host : process.env.MYSQL_HOST,
     user : process.env.MYSQL_USERNAME, 
     password : process.env.MYSQL_PASSWORD,
     database : process.env.MYSQL_DATABASE, 
