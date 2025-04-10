@@ -41,7 +41,7 @@ class LocationController{
     }
 
     static async getByFilters(request,h){
-        const { longitude? `longitude = ${longitude}` : "longitude != 0", latitude? `longitude = ${longitude}` : "longitude != 0" } = request.query;
+        const { longitude? `longitude = ${longitude}` : "longitude != 0", latitude? `latitude = ${latitude}` : "latitude != 0" } = request.query;
         const expectedQuery = ["report_id","provinci","city","address"];
         const sql = FilterData.expectedResults({
             sql : `SELECT * FROM location WHERE ${longitude} AND ${latitude}`,
