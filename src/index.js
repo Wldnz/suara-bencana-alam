@@ -5,7 +5,7 @@ const Connection = require("./config/connection");
 const storage = new Connection();
 const init = async () => {
     const server = Hapi.server({
-        host : "api-suara-bencana-alam.vercel.app",
+        host : process.env.ENVIROMENT_MODE === "production"? "api-suara-bencana-alam.vercel.app" : "localhost",
         port : 3000,
         routes : {
             cors : {
