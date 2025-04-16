@@ -1,0 +1,25 @@
+{
+  "short_name": "Syahrul Ramadhan- Personal Website",
+  "name": "Blog Sharing Information",
+  "icons": [
+    {
+      "src": "icons8-home-60.png",
+      "sizes": "60x60",
+      "type": "image/png"
+    },
+    {
+      "src": "icons8-home-12.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "icons8-home-240.png",
+      "type": "image/png",
+      "sizes": "240x240"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
